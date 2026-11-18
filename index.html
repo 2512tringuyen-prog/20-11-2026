@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Chúc mừng 20/11 – Cô Vũ Thị Oanh</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #fff7f3;
+        --card: #ffffff;
+        --text: #3a2230;
+        --muted: #7d6573;
+        --accent: #e0457b;
+        --accent2: #7c4dff;
+        --line: #f3d9e3;
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #1b1220;
+          --card: #2a1c31;
+          --text: #fbeaf1;
+          --muted: #c9aebc;
+          --accent: #ff7aa8;
+          --accent2: #b39dff;
+          --line: #4a3555;
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #1b1220;
+        --card: #2a1c31;
+        --text: #fbeaf1;
+        --muted: #c9aebc;
+        --accent: #ff7aa8;
+        --accent2: #b39dff;
+        --line: #4a3555;
+        color-scheme: dark;
+      }
+      :root {
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Be Vietnam Pro", system-ui, Arial, sans-serif;
+        text-align: center;
+        overflow-x: hidden;
+      }
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+        position: relative;
+        z-index: 1;
+      }
+      .mol {
+        position: fixed;
+        font-size: 28px;
+        opacity: 0.18;
+        animation: fl 9s ease-in-out infinite;
+        z-index: 0;
+      }
+      @keyframes fl {
+        50% {
+          transform: translateY(-24px) rotate(12deg);
+        }
+      }
+      .date {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 800;
+        border-radius: 99px;
+        padding: 6px 18px;
+        letter-spacing: 1px;
+      }
+      h1 {
+        font-family: "Dancing Script", cursive, serif;
+        font-size: clamp(38px, 9vw, 60px);
+        margin: 16px 0 4px;
+        color: var(--accent);
+      }
+      .sub {
+        color: var(--muted);
+        margin: 0 0 24px;
+      }
+      .tile {
+        width: 150px;
+        margin: 0 auto 12px;
+        border: 3px solid var(--accent2);
+        border-radius: 14px;
+        padding: 10px 6px;
+        background: var(--card);
+        box-shadow: 0 8px 24px rgba(124, 77, 255, 0.25);
+      }
+      .tile small {
+        display: block;
+        text-align: left;
+        padding-left: 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      .tile b {
+        display: block;
+        font-size: 64px;
+        line-height: 1;
+        color: var(--accent2);
+      }
+      .tile span {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .name {
+        font-size: 22px;
+        font-weight: 800;
+        margin: 6px 0 0;
+      }
+      .role {
+        color: var(--muted);
+        margin: 2px 0 26px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 22px;
+        margin: 18px 0;
+        text-align: left;
+        line-height: 1.7;
+      }
+      .eq {
+        text-align: center;
+        font-weight: 800;
+        font-size: clamp(15px, 4vw, 19px);
+        color: var(--accent2);
+      }
+      .eq small {
+        display: block;
+        font-weight: 400;
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      button {
+        font: inherit;
+        font-weight: 800;
+        border: 0;
+        border-radius: 99px;
+        padding: 14px 30px;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 6px 18px rgba(224, 69, 123, 0.35);
+      }
+      button:active {
+        transform: scale(0.96);
+      }
+      #wish {
+        display: none;
+        margin-top: 18px;
+      }
+      .sign {
+        font-family: "Dancing Script", cursive, serif;
+        font-size: 26px;
+        color: var(--accent);
+        text-align: right;
+        margin-top: 10px;
+      }
+      canvas {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="mol" style="left: 6%; top: 12%">⚗️</span>
+    <span class="mol" style="right: 8%; top: 22%; animation-delay: 2s">🧪</span>
+    <span class="mol" style="left: 12%; bottom: 14%; animation-delay: 4s"
+      >⚛️</span
+    >
+    <span class="mol" style="right: 10%; bottom: 10%; animation-delay: 1s"
+      >🌸</span
+    >
+
+    <div class="wrap">
+      <div class="date">20 · 11</div>
+      <h1>Ngày Nhà giáo Việt Nam</h1>
+      <p class="sub">Lời tri ân từ lớp 10A1 – Khóa 43</p>
+
+      <div class="tile">
+        <small>Cô</small>
+        <b>Oa</b>
+        <span>Vũ Thị Oanh</span>
+      </div>
+      <p class="name">Cô Vũ Thị Oanh</p>
+      <p class="role">
+        Giáo viên chủ nhiệm lớp 10A1 · Giáo viên bộ môn Hóa học<br />Trường THPT
+        Sông Lô, Tuyên Quang
+      </p>
+
+      <div class="card eq">
+        Tri thức + Tận tâm + Yêu thương → 10A1 trưởng thành
+        <small>Phương trình hạnh phúc mà cô đã “cân bằng” cho cả lớp</small>
+      </div>
+
+      <div class="card">
+        Kính gửi cô Oanh,<br />
+        Nhân ngày 20/11, cả lớp 10A1 xin gửi đến cô lời chúc sức khỏe, hạnh phúc
+        và luôn tràn đầy niềm vui. Cảm ơn cô đã kiên nhẫn giảng từng phản ứng
+        hóa học, đã dõi theo và nhắc nhở chúng em như người mẹ thứ hai ở trường.
+        Có cô, lớp mình không chỉ học được kiến thức mà còn học được cách sống
+        tử tế và cố gắng mỗi ngày.
+      </div>
+
+      <button id="btn">💌 Gửi lời chúc đến cô</button>
+
+      <div class="card" id="wish">
+        Chúc cô luôn rạng rỡ như ngọn lửa trong phòng thí nghiệm, bền bỉ như
+        những liên kết hóa học và mãi là “chất xúc tác” tuyệt vời cho thế hệ học
+        trò chúng em. 🌸<br />
+        Chúng em yêu cô rất nhiều!
+        <div class="sign">Tập thể lớp 10A1 – K43</div>
+      </div>
+    </div>
+
+    <canvas id="c"></canvas>
+    <script>
+      const cv = document.getElementById("c"),
+        ctx = cv.getContext("2d");
+      function rs() {
+        cv.width = innerWidth;
+        cv.height = innerHeight;
+      }
+      rs();
+      addEventListener("resize", rs);
+      let ps = [];
+      const cols = ["#e0457b", "#7c4dff", "#ffb300", "#26c6da", "#66bb6a"];
+      function boom() {
+        for (let i = 0; i < 140; i++)
+          ps.push({
+            x: innerWidth / 2,
+            y: innerHeight / 2,
+            vx: (Math.random() - 0.5) * 14,
+            vy: Math.random() * -12 - 2,
+            s: Math.random() * 7 + 3,
+            c: cols[i % 5],
+            l: 140,
+          });
+        if (ps.length === 140) loop();
+      }
+      function loop() {
+        ctx.clearRect(0, 0, cv.width, cv.height);
+        ps = ps.filter((p) => p.l > 0);
+        ps.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.28;
+          p.l--;
+          ctx.globalAlpha = p.l / 140;
+          ctx.fillStyle = p.c;
+          ctx.fillRect(p.x, p.y, p.s, p.s);
+        });
+        if (ps.length) requestAnimationFrame(loop);
+        else ctx.clearRect(0, 0, cv.width, cv.height);
+      }
+      document.getElementById("btn").onclick = () => {
+        document.getElementById("wish").style.display = "block";
+        document
+          .getElementById("wish")
+          .scrollIntoView({ behavior: "smooth", block: "center" });
+        boom();
+      };
+    </script>
+  </body>
+</html>
